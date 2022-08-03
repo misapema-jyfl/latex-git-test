@@ -14,9 +14,26 @@
     \newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}}   % = `bottom' strut
 \usepackage{subcaption}
 \usepackage{verbatim}
+\usepackage{indentfirst}
+\usepackage{blindtext}
 
-\begin{document}
-    This is a test.
+% title, author, thanks, date -------------------------------------------------
+\title{Sample title}
+\author{M Luntinen\thanks{my-email@jyu.fi}}
+\date{\today}
 
-    I am now making some changes. 
+\begin{document}\maketitle
+    
+    % Introduction ------------------------------------------------------------
+        \section{Introduction}
+        \blindtext
+
+        \blindtext
+    % New section -------------------------------------------------------------
+        \section{Main text}
+
+        \blindtext
+
+        \blindtext
+
 \end{document}
